@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <script src="lib/util.js"></script>
     <script src="lib/movingObject.js"></script>
     <script src="lib/asteroid.js"></script>
@@ -11,39 +12,9 @@
     <script src="lib/bullet.js"></script>
     <script src="jquery-2.1.1.js"></script>
 
-    <style>
-      body {
-        font-family: sans-serif;
-        font-size: 18px;
-      }
+    <link rel="stylesheet" type="text/css" href="application.css">
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
-      .game-header {
-        position: absolute;
-        top: 0;
-        padding: 20px;
-        opacity: .6;
-      }
-
-      #game-title {
-        left: 3%;
-      }
-
-      #game-instructions {
-        left: 40%;
-        text-align: center;
-        font-size: 14px;
-      }
-
-      #game-info {
-        left: 90%;
-      }
-
-      .group:after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-    </style>
   </head>
   <body>
 
@@ -63,6 +34,15 @@
 
     <canvas id="game-canvas"></canvas>
 
+    <div id="game-over-modal">
+      <div id="backdrop"></div>
+      <div id="modal-content" class="group">
+        <span id="game-over-info">Congratulations! You Won!</span>
+        <button id="play-again">play again</button>
+        <a id="view-source" href="https://github.com/dcolucci/Mondrians-Nightmare">view source</a>
+      </div>
+    </div>
+
     <script>
       var canvas = document.getElementById("game-canvas");
       canvas.height = window.innerHeight - 50;
@@ -71,8 +51,15 @@
       var game = new Asteroids.Game(canvas.width, canvas.height);
       var gv = new Asteroids.GameView(game, canvas.getContext('2d'));
       gv.start();
+    </script>
 
+    <script>
+      var playAgain = function (event) {
+        event.preventDefault();
+        location.reload();
+      };
 
+      $('#play-again').on('click', playAgain);
     </script>
 
   </body>
