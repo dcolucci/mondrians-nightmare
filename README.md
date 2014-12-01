@@ -12,7 +12,7 @@ A play on the classic Asteroids videogame -- navigate your vessel through Mondri
 ####Gameplay:
 * Your vessel starts / regenerates in a random position
 * You're safe from collisions for the first second after being regenerated -- then you're on your own!
-* You have 3 lives.
+* You have 3 lives
 
 Good luck.
 
