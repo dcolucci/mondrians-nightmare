@@ -9,9 +9,58 @@
     <script src="lib/ship.js"></script>
     <script src="lib/keymaster.js"></script>
     <script src="lib/bullet.js"></script>
+    <script src="jquery-2.1.1.js"></script>
 
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 18px;
+      }
+
+      .game-header {
+        position: absolute;
+        top: 0;
+        padding: 20px;
+        opacity: .6;
+      }
+
+      #game-title {
+        left: 3%;
+      }
+
+      #game-instructions {
+        left: 40%;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      #game-info {
+        left: 90%;
+      }
+
+      .group:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
+
+    <div id="game-title" class="game-header">
+      <span>Mondrian's Nightmare</span>
+    </div>
+
+    <div id="game-instructions" class="game-header group">
+      <span class="group">press arrow keys to navigate</span>
+      <span class="group">press spacebar to shoot</span>
+    </div>
+
+    <div id="game-info" class="game-header group">
+      <span>Lives: </span>
+      <span id="lives-counter"></span>
+    </div>
+
     <canvas id="game-canvas"></canvas>
 
     <script>

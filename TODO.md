@@ -1,5 +1,4 @@
 ###Items
 
-* asteroid shape/color
-* bullet shape/color
-* background
+* improve game over handling
+* get online
