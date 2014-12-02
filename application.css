@@ -1,0 +1,102 @@
+body {
+  font-family: 'Inconsolata';
+  font-size: 18px;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+  font: inherit;
+  padding: 20px;
+  border: 0;
+  outline: none;
+  background: #0000FF;
+  color: #FFFFFF;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #0000CC;
+}
+
+.game-header {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  opacity: .6;
+  z-index: 2
+}
+
+#game-canvas {
+  z-index: 1;
+  background: #FFFFFF;
+}
+
+#game-title {
+  left: 3%;
+}
+
+#game-instructions {
+  left: 50%;
+  width: 300px;
+  margin-left: -170px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#game-info {
+  left: 90%;
+}
+
+#game-over-modal {
+  z-index: -1;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#backdrop {
+  background: rgba(0,0,0,.9);
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+}
+
+#modal-content {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  width: 500px;
+  margin-left: -294px;
+  padding: 40px;
+  background: #FFFFFF;
+  opacity: 1;
+  border: 4px solid black;
+  text-align: center;
+}
+
+#game-over-info {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+#view-source {
+  font: inherit;
+  color: #0000FF;
+  text-decoration: none;
+}
+
+#view-source:hover {
+  text-decoration: underline;
+}
