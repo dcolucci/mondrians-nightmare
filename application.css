@@ -46,7 +46,7 @@ button:hover {
 #game-instructions {
   left: 50%;
   width: 300px;
-  margin-left: -150px;
+  margin-left: -170px;
   text-align: center;
   font-size: 14px;
 }
@@ -77,7 +77,7 @@ button:hover {
   top: 80px;
   left: 50%;
   width: 500px;
-  margin-left: -250px;
+  margin-left: -294px;
   padding: 40px;
   background: #FFFFFF;
   opacity: 1;
