@@ -14,6 +14,8 @@ A play on the classic Asteroids videogame -- navigate your vessel through Mondri
 * You're safe from collisions for the first second after being regenerated -- then you're on your own!
 * You have 3 lives
 
+[PLAY](http://mondrians-nightmare.com)
+
 Good luck.
 
 [Read about Piet Mondrian](http://en.wikipedia.org/wiki/Piet_Mondrian)
