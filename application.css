@@ -91,12 +91,12 @@ button:hover {
   margin-bottom: 40px;
 }
 
-#view-source {
+a {
   font: inherit;
   color: #0000FF;
   text-decoration: none;
 }
 
-#view-source:hover {
+a:hover {
   text-decoration: underline;
 }
