@@ -3,13 +3,13 @@ Mondrian's Nightmare
 
 A play on the classic Asteroids videogame -- navigate your vessel through Mondrian's canvas and destroy all the blocks before they destroy you!
 
-####Controls:
+#### Controls:
 * up arrow: accelerate
 * down arrow: decelerate
 * left/right: change direction
 * spacebar: fire bullet
 
-####Gameplay:
+#### Gameplay:
 * Your vessel starts / regenerates in a random position
 * You're safe from collisions for the first second after being regenerated -- then you're on your own!
 * You have 3 lives
